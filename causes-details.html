@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+
+    <link rel="shortcut icon" href="./assets/img/logo/Exclude.png" type="image/x-icon">
+
+    <title>Nonprofit - Haplies</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <div class="box-shadow">
+            <div class="top__bar container d-flex">
+                <div class="top__info">
+                    <a href="#" class="top__item">
+                        <i class='bx bxs-envelope top__link-icon'></i>
+                        <span class="top__link-text">contact@gmail.com</span>
+                    </a>
+                    <a href="#" class="top__item">
+                        <i class='bx bxs-phone top__link-icon'></i>
+                        <span class="top__link-text">666 888 000</span>
+                    </a>
+                </div>
+    
+                <div class="top__social">
+                    <a href="" class="top__social-icon"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-twitter'></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-youtube'></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-pinterest'></i></a>
+                </div>
+    
+                <div class="top__donate">
+                    <a href="#" class="button button--flex">
+                        <i class='bx bxs-heart button__icon' ></i>
+                        <span class="button__text">Donate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav bar -->
+        <div id="fixed">
+            <div class="nav__bar container">
+                <a href="index.html" class="nav__logo">
+                    <!-- <img src="./assets/img/logo/Exclude.png" alt="" class="nav__logo-img"> -->
+                    Haplies
+                </a>
+    
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link ">Home</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="causes.html" class="nav__link active-link">Our Causes</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="event.html" class="nav__link ">Event</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="blog.html" class="nav__link ">Blog</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="faq.html" class="nav__link ">Faq's</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+    
+                    <div class="nav__close" id="nav-close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+    
+                <div class="nav__btns">
+                    <div class="nav__search" id="search-button">
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <div class="login__toggle" id="login-button">
+                        <i class="bx bx-user"></i>
+                    </div>
+    
+                    <div class="nav__wishlist" id="cart-wishlist">
+                        <a href="#"><i class='bx bx-heart'></i></a>
+                    </div>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="bx bx-grid-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!--=============== search ===============-->
+    <div class="search" id="search">
+        <div class="search__box">
+            <form class="search__form" id="search__form">
+                <div class="search-control">
+                    <input type="search" placeholder="Search" id="search" class="search__input">
+                    <input type="submit" value="Search" class="button__search">
+                </div>
+              </form>
+        </div>
+    </div>
+
+    <!--=============== user ===============-->
+    <div class="user" id="user">
+        <div class="user__box sign__in" id="sign-in">
+            <header class="user__header">
+                
+                <h4 class="signin active-login">Sign in</h4>
+                <h4 class="signup" onclick="showSignup()">Sign up</h4>
+                <i class="bx bx-x user__close" id="signin-close"></i>
+            </header>
+    
+            <form action="" id="signin-form" class="form">
+
+                <!-- email -->
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Email" id="signin-email">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Email can't be blank</small>
+                </div>
+                <!-- password -->
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="signin-password">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Password can't be blank</small>
+                    <p class="signup"><a href="registration.html">Forgot password?</a></p>
+                </div>
+
+                <input type="submit" value="Login" id="sign-in-submit">
+                <!-- login social -->
+                <div class="login__social">
+                    <div class="login-or">
+                        <div class="social-hr"></div>
+                        <span>Or</span>
+                        <div class="social-hr"></div>
+                    </div>
+                    <div class="social__icon">
+                        <a href="#" class="button button--flex social-btn btn-facebook">
+                            <i class='bx bxl-facebook button__icon' ></i>
+                            <span class="button__text">Facebook</span>
+                        </a>
+                        <a href="#" class="button button--flex social-btn btn-google">
+                            <i class='bx bxl-google button__icon' ></i>
+                            <span class="button__text">Goggle</span>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="user__box sign__up" id="sign-up">
+            <header class="user__header">
+                
+                <h4 class="signin" onclick="showSignin()">Sign in</h4>
+                <h4 class="signup active-login">Sign up</h4>
+                <i class="bx bx-x user__close" id="signup-close"></i>
+            </header>
+    
+            <form action="" id="signup-form" class="form">
+                <!-- user name -->
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Username" id="username">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Username can't be blank</small>
+                </div>
+                <!-- email -->
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="hello@gmail.com" id="email">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Email can't be blank</small>
+                </div>
+                <!-- password -->
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="password">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Password can't be blank</small>
+                </div>
+                <!-- user name -->
+                <div class="form-control">
+                    <label for="check-password">Password</label>
+                    <input type="password" placeholder="Password" id="check-password">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Password can't be blank</small>
+                </div>
+    
+                <input type="submit" value="Sign Up" id="sign-up-submit">
+                <p class="signup">Do not password<a href="registration.html">Sign up now</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+
+        <!-- breadcrumb  -->
+        <section class="breadcrumb">
+            <div class="breadcrumb-overlay">
+            </div>
+            <div class="breadcrumb__main">
+                <div class="container">
+                    <div class="breadcrumb__text">
+                        <h2 class="breadcrumb__heading">Raise Fund For Clean & Healthy Waters</h2>
+                        <ul class="breadcrumb__page">
+                            <li><a href="index.html">Home</a></li>
+                            &#824
+                            <li><a href="causes.html">Causes</a></li>
+                            &#824
+                            <li><a href="">Causes Details</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ Causes Details =============== -->
+        <section class="details">
+            <div class="container">
+                <div class="give-way">
+                    <article class="sidebar-right">
+                        <div class="details__img">
+                            <img src="./assets/img/causes/6.jpg" alt="">                            
+                            <div class="product__range">
+                                <div class="product__prices">
+                                    <div class="product__progress">
+                                        <div class="progress__bar" style="width: 33%;">
+                                            <div class="progress__count" style="left: 33%;">
+                                                <div class="count-text" data-speed="2000" data-stop="33">33.23%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="product__price">
+                                        <div class="product__price-raise">
+                                            Raise <p class="product__price-raise-text">$24.99</p>
+                                        </div>
+                                        <div class="product__price-goal">
+                                            Goal <p class="product__price-goal-text">$124.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="details-title">Raise Fund for Clean & Healthy Water</h2>
+                        <div class="details__meta">
+                            <div class="details__meta-category">
+                                Education
+                            </div>
+                            <div class="details__meta-author">
+                                <i class='bx bxs-message-square-edit' ></i>
+                                by <a href="#">admin</a>
+                            </div>
+                            <div class="details__meta-date">
+                                <i class='bx bxs-calendar'></i>
+                                <a href="#">23/04/2022</a>
+                            </div>
+                        </div>
+
+                        <div class="details-donate">
+                            <div class="donate-total">
+                                <div class="donate-total-symbol">
+                                    $
+                                </div>
+                                <input type="text" value="25.00" id="donate-total-input" autocomplete="off">
+                            </div>
+                            <ul class="total-list" id="total-list">
+                                <!-- <li><input type="button" class="total-btn total-active" onclick="filterProduct('25.00')" value="25.00"></input></li> -->
+                                <span class="total-btn total-active" onclick="numberInput('25.00')">25.00</span>
+                                <span class="total-btn " onclick="numberInput('50.00')">50.00</span>
+                                <span class="total-btn " onclick="numberInput('75.00')">75.00</span>
+                                <span class="total-btn " onclick="numberInput('100.00')">100.00</span>
+                                <span class="total-btn " onclick="numberInput('custom')">Custom</span>
+                                <!-- <li><button class="total-btn">50.00</button></li> -->
+                            </ul>
+                            <h6 class="total-heading">Select Payment Method</h6>
+                            <div class="payment-mode">
+                                
+                            </div>
+                        </div>
+
+
+                    </article>
+                    <aside class="sidebar-left">
+                        <div class="categories__widget">
+                            <h4 class="widget-title">Categories</h4>
+                            <ul class="widget-list">
+                               <li class="widget-list-item"><a href="">School Charity</a></li> 
+                               <li class="widget-list-item"><a href="">Education</a></li> 
+                               <li class="widget-list-item"><a href="">Water</a></li> 
+                               <li class="widget-list-item"><a href="">Homeless</a></li> 
+                               <li class="widget-list-item"><a href="">Volunteer</a></li> 
+                            </ul>
+                        </div>
+                        <div class="categories__widget">
+                            <h4 class="widget-title">Recent Posts</h4>
+                            <ul class="widget-list">
+
+                                <li class="widget-list-item"><a href="">
+                                    <div href="" class="widget-list-box">
+                                        <div class="widget-list-img">
+                                            <img src="./assets/img/blog/blog-2.jpg" alt="">
+                                        </div>
+                                        <div class="widget-list-content">
+                                            <div class="list-box-comment"><i class='bx bx-message-square-dots' ></i>0 comment</div>
+                                            <h6 class="list-box-heading">Donation is Hope for Poor Childrens</h6>
+                                        </div>
+
+                                    </div>
+                                </a></li> 
+
+                                <li class="widget-list-item"><a href="">
+                                    <div href="" class="widget-list-box">
+                                        <div class="widget-list-img">
+                                            <img src="./assets/img/blog/blog-4.jpg" alt="">
+                                        </div>
+                                        <div class="widget-list-content">
+                                            <div class="list-box-comment"><i class='bx bx-message-square-dots' ></i>0 comment</div>
+                                            <h6 class="list-box-heading">Donation is Hope for Poor Childrens</h6>
+                                        </div>
+
+                                    </div>
+                                </a></li> 
+
+                                <li class="widget-list-item"><a href="">
+                                    <div href="" class="widget-list-box">
+                                        <div class="widget-list-img">
+                                            <img src="./assets/img/blog/blog-1.jpeg" alt="">
+                                        </div>
+                                        <div class="widget-list-content">
+                                            <div class="list-box-comment"><i class='bx bx-message-square-dots' ></i>0 comment</div>
+                                            <h6 class="list-box-heading">Donation is Hope for Poor Childrens</h6>
+                                        </div>
+
+                                    </div>
+                                </a></li> 
+
+                                <li class="widget-list-item"><a href="">
+                                    <div href="" class="widget-list-box">
+                                        <div class="widget-list-img">
+                                            <img src="./assets/img/blog/blog-1.jpeg" alt="">
+                                        </div>
+                                        <div class="widget-list-content">
+                                            <div class="list-box-comment"><i class='bx bx-message-square-dots' ></i>0 comment</div>
+                                            <h6 class="list-box-heading">Donation is Hope for Poor Childrens</h6>
+                                        </div>
+
+                                    </div>
+                                </a></li> 
+                             </ul>
+                        </div>
+                        <div class="categories__widget">
+                            <h4 class="widget-title">Tag</h4>
+                            <ul class="widget-list widget-list-tag">
+                               <li class="widget-list-item-tag"><a href="">School Charity</a></li> 
+                               <li class="widget-list-item-tag"><a href="">Education</a></li> 
+                               <li class="widget-list-item-tag"><a href="">Water</a></li> 
+                               <li class="widget-list-item-tag"><a href="">Homeless</a></li> 
+                               <li class="widget-list-item-tag"><a href="">Volunteer</a></li> 
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__box container">
+            <div class="footer-col-3">
+                <a href="index.html" class="footer__logo">
+                    Haplies
+                </a>
+                <p class="footer__desc">
+                    Lorem ipsum dolor sit ame consect etur pisicing elit sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <a href="#" class="button">
+                    <span class="button__text">View All</span>
+                </a>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html" class="footer__heading">
+                    Company
+                </a>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#">About us</a></li>
+                    <li class="footer__list-item"><a href="#">Latest event</a></li>
+                    <li class="footer__list-item"><a href="#">How it works</a></li>
+                    <li class="footer__list-item"><a href="#">News</a></li>
+                    <li class="footer__list-item"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html" class="footer__heading">
+                    Contact us
+                </a>
+                <div class="footer__contact">
+                    <div class="footer__contact-box">
+                        <div class="footer__contact-icon">
+                            <i class='bx bx-mail-send' ></i>
+                        </div>
+                        <div class="footer__contact-text">
+                            <div class="footer__contact-title">Send Email</div>
+                            <div class="footer__contact-desc">contact@example.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact-box">
+                        <div class="footer__contact-icon">
+                            <i class='bx bx-map-alt' ></i>
+                        </div>
+                        <div class="footer__contact-text">
+                            <div class="footer__contact-title">Visit Office</div>
+                            <div class="footer__contact-desc">Ha Noi, Viet Nam</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact-box">
+                        <div class="footer__contact-icon">
+                            <i class='bx bxs-phone' ></i>
+                        </div>
+                        <div class="footer__contact-text">
+                            <div class="footer__contact-title">Call Anytime</div>
+                            <div class="footer__contact-desc">666 888 0000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col-3">
+                <a href="index.html" class="footer__heading">
+                    Newsletter
+                </a>
+                <p class="footer__desc">
+                    Lorem ipsum dolor sit ame consect etur pisicing elit sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <div class="footer__subscribe">
+                    <input type="email" placeholder="Enter your email" class="footer__input">
+
+                    <button class="button button--flex footer__button">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                        <span class="button__text">Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; Haplies. All rigths reserved</p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+    <!--=============== STYLE SWITCHER ===============-->
+
+
+    <script src="./assets/js/checknumber.js"></script>
+
+    <script src="./assets/js/categories.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/checkLogin.js"></script>
+</body>
+</html>

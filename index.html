@@ -1,0 +1,1431 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+
+    <link rel="shortcut icon" href="./assets/img/logo/Exclude.png" type="image/x-icon">
+
+    <title>Nonprofit - Haplies</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <div class="box-shadow">
+            <div class="top__bar container d-flex">
+                <div class="top__info">
+                    <a href="#" class="top__item">
+                        <i class='bx bxs-envelope top__link-icon'></i>
+                        <span class="top__link-text">contact@gmail.com</span>
+                    </a>
+                    <a href="#" class="top__item">
+                        <i class='bx bxs-phone top__link-icon'></i>
+                        <span class="top__link-text">666 888 000</span>
+                    </a>
+                </div>
+    
+                <div class="top__social">
+                    <a href="" class="top__social-icon"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-twitter'></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-youtube'></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-pinterest'></i></a>
+                </div>
+    
+                <div class="top__donate">
+                    <a href="#" class="button button--flex">
+                        <i class='bx bxs-heart button__icon' ></i>
+                        <span class="button__text">Donate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav bar -->
+        <div id="fixed">
+            <div class="nav__bar container">
+                <a href="index.html" class="nav__logo">
+                    <!-- <img src="./assets/img/logo/Exclude.png" alt="" class="nav__logo-img"> -->
+                    Haplies
+                </a>
+    
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link">Home</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="causes.html" class="nav__link">Our Causes</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="event.html" class="nav__link">Event</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="blog.html" class="nav__link">Blog</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="faq.html" class="nav__link">Faq's</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+    
+                    <div class="nav__close" id="nav-close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+    
+                <div class="nav__btns">
+                    <div class="nav__search" id="search-button">
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <div class="login__toggle" id="login-button">
+                        <i class="bx bx-user"></i>
+                    </div>
+    
+                    <div class="nav__wishlist" id="cart-wishlist">
+                        <a href="#"><i class='bx bx-heart'></i></a>
+                    </div>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="bx bx-grid-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!--=============== search ===============-->
+    <div class="search" id="search">
+        <div class="search__box">
+            <form class="search__form" id="search__form">
+                <div class="search-control">
+                    <input type="search" placeholder="Search" id="search" class="search__input">
+                    <input type="submit" value="Search" class="button__search">
+                </div>
+              </form>
+        </div>
+    </div>
+
+    <!--=============== user ===============-->
+    <div class="user" id="user">
+        <div class="user__box sign__in" id="sign-in">
+            <header class="user__header">
+                
+                <h4 class="signin active-login">Sign in</h4>
+                <h4 class="signup" onclick="showSignup()">Sign up</h4>
+                <i class="bx bx-x user__close" id="signin-close"></i>
+            </header>
+    
+            <form action="" id="signin-form" class="form">
+
+                <!-- email -->
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Email" id="signin-email">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Email can't be blank</small>
+                </div>
+                <!-- password -->
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="signin-password">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Password can't be blank</small>
+                    <p class="signup"><a href="registration.html">Forgot password?</a></p>
+                </div>
+
+                <input type="submit" value="Login" id="sign-in-submit">
+                <!-- login social -->
+                <div class="login__social">
+                    <div class="login-or">
+                        <div class="social-hr"></div>
+                        <span>Or</span>
+                        <div class="social-hr"></div>
+                    </div>
+                    <div class="social__icon">
+                        <a href="#" class="button button--flex social-btn btn-facebook">
+                            <i class='bx bxl-facebook button__icon' ></i>
+                            <span class="button__text">Facebook</span>
+                        </a>
+                        <a href="#" class="button button--flex social-btn btn-google">
+                            <i class='bx bxl-google button__icon' ></i>
+                            <span class="button__text">Goggle</span>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="user__box sign__up" id="sign-up">
+            <header class="user__header">
+                
+                <h4 class="signin" onclick="showSignin()">Sign in</h4>
+                <h4 class="signup active-login">Sign up</h4>
+                <i class="bx bx-x user__close" id="signup-close"></i>
+            </header>
+    
+            <form action="" id="signup-form" class="form">
+                <!-- user name -->
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Username" id="username">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Username can't be blank</small>
+                </div>
+                <!-- email -->
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="hello@gmail.com" id="email">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Email can't be blank</small>
+                </div>
+                <!-- password -->
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="password">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Password can't be blank</small>
+                </div>
+                <!-- user name -->
+                <div class="form-control">
+                    <label for="check-password">Password</label>
+                    <input type="password" placeholder="Password" id="check-password">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Password can't be blank</small>
+                </div>
+    
+                <input type="submit" value="Sign Up" id="sign-up-submit">
+                <p class="signup">Do not password<a href="registration.html">Sign up now</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+
+        <!-- ===========SLIDER ================ -->
+        <div class="slider">
+            <!-- fade css -->
+            <div class="slider__box fade">
+                <div class="slider__text">
+                    <span class="text__heart">Helping the today
+                        <img src="./assets/img/Exclude.png" alt="" class="img__heart">
+                    </span>
+                    
+                    <h1 class="slider__text-heading">Help the Poor <br>
+                        in Need</h1>
+                    <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                    <a href="#" class="button button--flex">
+                        <i class='bx bxs-heart button__icon' ></i>
+                        <span class="button__text">Donate</span>
+                    </a>
+                </div>
+                <img src="./assets/img/slider/book.jpg" class="slider__img">
+            </div>
+            <div class="slider__box fade">
+                <div class="slider__text">
+                    <span class="text__heart">Helping the today
+                        <img src="./assets/img/Exclude.png" alt="" class="img__heart">
+                    </span>
+                    
+                    <h1 class="slider__text-heading">Help the Poor <br>
+                        in Need</h1>
+                    <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                    <a href="#" class="button button--flex">
+                        <i class='bx bxs-heart button__icon' ></i>
+                        <span class="button__text">Donate</span>
+                    </a>
+                </div>
+                <img src="./assets/img/slider/book-2.jpg" class="slider__img">
+            </div>
+            <div class="slider__box fade">
+                <div class="slider__text">
+                    <span class="text__heart">Helping the today
+                        <img src="./assets/img/Exclude.png" alt="" class="img__heart">
+                    </span>
+                    
+                    <h1 class="slider__text-heading">Help the Poor <br>
+                        in Need</h1>
+                    <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                    <a href="#" class="button button--flex">
+                        <i class='bx bxs-heart button__icon' ></i>
+                        <span class="button__text">Donate</span>
+                    </a>
+                </div>
+                <img src="./assets/img/slider/book-3.jpg" class="slider__img">
+            </div>
+            <div class="slider__box fade">
+                <div class="slider__text">
+                    <span class="text__heart">Helping the today
+                        <img src="./assets/img/Exclude.png" alt="" class="img__heart">
+                    </span>
+                    
+                    <h1 class="slider__text-heading">Help the Poor <br>
+                        in Need</h1>
+                    <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                    <a href="#" class="button button--flex">
+                        <i class='bx bxs-heart button__icon' ></i>
+                        <span class="button__text">Donate</span>
+                    </a>
+                </div>
+                <img src="./assets/img/slider/book-4.jpg" class="slider__img">
+            </div>
+            <div class="slider__box fade">
+                <div class="slider__text">
+                    <span class="text__heart">Helping the today
+                        <img src="./assets/img/Exclude.png" alt="" class="img__heart">
+                    </span>
+                    
+                    <h1 class="slider__text-heading">Help the Poor <br>
+                        in Need</h1>
+                    <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                    <a href="#" class="button button--flex">
+                        <i class='bx bxs-heart button__icon' ></i>
+                        <span class="button__text">Donate</span>
+                    </a>
+                </div>
+                <img src="./assets/img/slider/book-4.jpg" class="slider__img">
+            </div>
+
+            <!-- /fade css -->
+            
+            <!-- onclick js -->
+            <div class="slide__arrow">
+                <i class='bx bxs-chevron-left slider-prev' onclick="plusSlides(-1)"></i>
+                <i class='bx bxs-chevron-right slider-next' onclick="plusSlides(1)" ></i>
+                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+            </div>
+            
+            <div class="slide__dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <!-- /onclick js -->
+        </div>
+        <!--=============== welcome ===============-->
+        <section class="welcome container section">
+            <div class="welcome__image">
+                <div class="welcome__img-first">
+                    <div class="welcome__box"></div>
+                    <img src="./assets/img/welcome/image-1.jpg" alt="" class="welcome__img-1">
+                </div>
+                <div class="welcome__img-second">
+                    <img src="./assets/img/welcome/ocg-welcome.jpg" alt="" class="welcome__img-2">
+                </div>
+                <div class="welcome__text">
+                     <img src="./assets/img/Exclude.png" alt="">
+                </div>
+
+            </div>
+            <div class="welcome__content">
+                <div class="welcome__sub-title sub-title"><span class="welcome__sub-title-hr sub-title-hr"></span> Welcome to Charity</div>
+                <h2 class="title">Helping each other can make world better</h2>
+                <p>We are trusted by our clients and have a reputation for the best services in the field. Lorem ipsum is simply free text dolor sit amett consectetur adipiscing elit.</p>
+                <div class="welcome__details">
+                    <div class="welcome__details-description">
+                        <i class='bx bxs-check-square welcome__details-icon'></i>
+                        <p class="welcome__details-text">We always deliver on time.</p>
+                    </div>
+                    <div class="welcome__details-description">
+                        <i class='bx bxs-check-square welcome__details-icon'></i>
+                        <p class="welcome__details-text">We always deliver on time.</p>
+                    </div>
+                    <div class="welcome__details-description">
+                        <i class='bx bxs-check-square welcome__details-icon'></i>
+                        <p class="welcome__details-text">Join the community to give education for children</p>
+                    </div>
+                    <div class="welcome__details-description">
+                        <i class='bx bxs-check-square welcome__details-icon'></i>
+                        <p class="welcome__details-text">Find the popular cause and donate them</p>
+                    </div>
+                </div>
+                <a href="#" class="button button--flex">
+                    <i class='bx bxs-heart button__icon' ></i>
+                    <span class="button__text">Donate</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== product ===============-->
+        <section class="product section">
+            <div class="container">
+                <div class="section__title center">
+                    <div class="welcome__sub-title sub-title"><span class="welcome__sub-title-hr sub-title-hr center"></span> Welcome to Charity</div>
+                    <h2 class="title">Helping each other can 
+                        <br> make world better</h2>
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper ">
+                      <div class="swiper-slide">
+                        <div class="product__container">
+                            <a class="product__card" href="causes-details.html">
+                                <div class="product__content">
+                                    <div class="product__tag">Water Child</div>
+                                    <div class="product__icon">
+                                        <i class='bx bxs-camera'></i>
+                                        <i class='bx bxs-video' ></i>
+                                    </div>
+                                    <div class="product__img"><img src="./assets/img/product/donate-9.jpg" alt=""></div>
+                                    <div class="product__main">
+                                        <h4 class="product__title">
+                                            Clean water system for rural
+                                        </h4>
+                                        <span class="product__subtitle">Event management is the application of project management </span>
+                                    </div>
+                                    <div class="product__range">
+                                        <div class="product__prices">
+                                            <div class="product__progress">
+                                                <div class="progress__bar" style="width: 73%;">
+                                                    <div class="progress__count">
+                                                        <div class="count-text" data-speed="2000" data-stop="73">73.23%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="product__price">
+                                                <div class="product__price-raise">
+                                                    Raise <p class="product__price-raise-text">$24.99</p>
+                                                </div>
+                                                <div class="product__price-goal">
+                                                    Goal <p class="product__price-goal-text">$124.99</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </a>
+                            <a class="product__card" href="causes-details.html">
+                                <div class="product__content">
+                                    <div class="product__tag">Water Child</div>
+                                    <div class="product__icon">
+                                        <i class='bx bxs-camera'></i>
+                                        <i class='bx bxs-video' ></i>
+                                    </div>
+                                    <div class="product__img"><img src="./assets/img/product/donate-5.jpg" alt=""></div>
+                                    <div class="product__main">
+                                        <h4 class="product__title">
+                                            Clean water system for rural
+                                        </h4>
+                                        <span class="product__subtitle">Event management is the application of project management </span>
+                                    </div>
+                                    <div class="product__range">
+                                        <div class="product__prices">
+                                            <div class="product__progress">
+                                                <div class="progress__bar" style="width: 73%;">
+                                                    <div class="progress__count">
+                                                        <div class="count-text" data-speed="2000" data-stop="73">73.23%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="product__price">
+                                                <div class="product__price-raise">
+                                                    Raise <p class="product__price-raise-text">$24.99</p>
+                                                </div>
+                                                <div class="product__price-goal">
+                                                    Goal <p class="product__price-goal-text">$124.99</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </a>
+                            <a class="product__card" href="causes-details.html">
+                                <div class="product__content">
+                                    <div class="product__tag">Water Child</div>
+                                    <div class="product__icon">
+                                        <i class='bx bxs-camera'></i>
+                                        <i class='bx bxs-video' ></i>
+                                    </div>
+                                    <div class="product__img"><img src="./assets/img/product/donate-6-600x445.jpg" alt=""></div>
+                                    <div class="product__main">
+                                        <h4 class="product__title">
+                                            Clean water system for rural
+                                        </h4>
+                                        <span class="product__subtitle">Event management is the application of project management </span>
+                                    </div>
+                                    <div class="product__range">
+                                        <div class="product__prices">
+                                            <div class="product__progress">
+                                                <div class="progress__bar" style="width: 73%;">
+                                                    <div class="progress__count">
+                                                        <div class="count-text" data-speed="2000" data-stop="73">73.23%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="product__price">
+                                                <div class="product__price-raise">
+                                                    Raise <p class="product__price-raise-text">$24.99</p>
+                                                </div>
+                                                <div class="product__price-goal">
+                                                    Goal <p class="product__price-goal-text">$124.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__container">
+                            <a class="product__card" href="causes-details.html">
+                                <div class="product__content">
+                                    <div class="product__tag">Water Child</div>
+                                    <div class="product__icon">
+                                        <i class='bx bxs-camera'></i>
+                                        <i class='bx bxs-video' ></i>
+                                    </div>
+                                    <div class="product__img"><img src="./assets/img/product/bg-6.jpg" alt=""></div>
+                                    <div class="product__main">
+                                        <h4 class="product__title">
+                                            Clean water system for rural
+                                        </h4>
+                                        <span class="product__subtitle">Event management is the application of project management </span>
+                                    </div>
+                                    <div class="product__range">
+                                        <div class="product__prices">
+                                            <div class="product__progress">
+                                                <div class="progress__bar" style="width: 73%;">
+                                                    <div class="progress__count">
+                                                        <div class="count-text" data-speed="2000" data-stop="73">73.23%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="product__price">
+                                                <div class="product__price-raise">
+                                                    Raise <p class="product__price-raise-text">$24.99</p>
+                                                </div>
+                                                <div class="product__price-goal">
+                                                    Goal <p class="product__price-goal-text">$124.99</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </a>
+                            <a class="product__card" href="causes-details.html">
+                                <div class="product__content">
+                                    <div class="product__tag">Water Child</div>
+                                    <div class="product__icon">
+                                        <i class='bx bxs-camera'></i>
+                                        <i class='bx bxs-video' ></i>
+                                    </div>
+                                    <div class="product__img"><img src="./assets/img/product/donate-9.jpg" alt=""></div>
+                                    <div class="product__main">
+                                        <h4 class="product__title">
+                                            Clean water system for rural
+                                        </h4>
+                                        <span class="product__subtitle">Event management is the application of project management </span>
+                                    </div>
+                                    <div class="product__range">
+                                        <div class="product__prices">
+                                            <div class="product__progress">
+                                                <div class="progress__bar" style="width: 73%;">
+                                                    <div class="progress__count">
+                                                        <div class="count-text" data-speed="2000" data-stop="73">73.23%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="product__price">
+                                                <div class="product__price-raise">
+                                                    Raise <p class="product__price-raise-text">$24.99</p>
+                                                </div>
+                                                <div class="product__price-goal">
+                                                    Goal <p class="product__price-goal-text">$124.99</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </a>
+                            <a class="product__card" href="causes-details.html">
+                                <div class="product__content">
+                                    <div class="product__tag">Water Child</div>
+                                    <div class="product__icon">
+                                        <i class='bx bxs-camera'></i>
+                                        <i class='bx bxs-video' ></i>
+                                    </div>
+                                    <div class="product__img"><img src="./assets/img/product/donate-6-600x445.jpg" alt=""></div>
+                                    <div class="product__main">
+                                        <h4 class="product__title">
+                                            Clean water system for rural
+                                        </h4>
+                                        <span class="product__subtitle">Event management is the application of project management </span>
+                                    </div>
+                                    <div class="product__range">
+                                        <div class="product__prices">
+                                            <div class="product__progress">
+                                                <div class="progress__bar" style="width: 73%;">
+                                                    <div class="progress__count">
+                                                        <div class="count-text" data-speed="2000" data-stop="73">73.23%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="product__price">
+                                                <div class="product__price-raise">
+                                                    Raise <p class="product__price-raise-text">$24.99</p>
+                                                </div>
+                                                <div class="product__price-goal">
+                                                    Goal <p class="product__price-goal-text">$124.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- <div class="product__container">
+                    <a class="product__card" href="#">
+                        <div class="product__content">
+                            <div class="product__tag">Water Child</div>
+                            <div class="product__icon">
+                                <i class='bx bxs-camera'></i>
+                                <i class='bx bxs-video' ></i>
+                            </div>
+                            <div class="product__img"><img src="./assets/img/product/donate-9.jpg" alt=""></div>
+                            <div class="product__main">
+                                <h4 class="product__title">
+                                    Clean water system for rural
+                                </h4>
+                                <span class="product__subtitle">Event management is the application of project management </span>
+                            </div>
+                            <div class="product__range">
+                                <div class="product__prices">
+                                    <div class="product__progress">
+                                        <div class="progress__bar" style="width: 73%;">
+                                            <div class="progress__count">
+                                                <div class="count-text" data-speed="2000" data-stop="73">73.23%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__price">
+                                        <div class="product__price-raise">
+                                            Raise <p class="product__price-raise-text">$24.99</p>
+                                        </div>
+                                        <div class="product__price-goal">
+                                            Goal <p class="product__price-goal-text">$124.99</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a class="product__card" href="">
+                        <div class="product__content">
+                            <div class="product__tag">Water Child</div>
+                            <div class="product__icon">
+                                <i class='bx bxs-camera'></i>
+                                <i class='bx bxs-video' ></i>
+                            </div>
+                            <div class="product__img"><img src="./assets/img/product/donate-5.jpg" alt=""></div>
+                            <div class="product__main">
+                                <h4 class="product__title">
+                                    Clean water system for rural
+                                </h4>
+                                <span class="product__subtitle">Event management is the application of project management </span>
+                            </div>
+                            <div class="product__range">
+                                <div class="product__prices">
+                                    <div class="product__progress">
+                                        <div class="progress__bar" style="width: 73%;">
+                                            <div class="progress__count">
+                                                <div class="count-text" data-speed="2000" data-stop="73">73.23%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__price">
+                                        <div class="product__price-raise">
+                                            Raise <p class="product__price-raise-text">$24.99</p>
+                                        </div>
+                                        <div class="product__price-goal">
+                                            Goal <p class="product__price-goal-text">$124.99</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a class="product__card" href="">
+                        <div class="product__content">
+                            <div class="product__tag">Water Child</div>
+                            <div class="product__icon">
+                                <i class='bx bxs-camera'></i>
+                                <i class='bx bxs-video' ></i>
+                            </div>
+                            <div class="product__img"><img src="./assets/img/product/donate-6-600x445.jpg" alt=""></div>
+                            <div class="product__main">
+                                <h4 class="product__title">
+                                    Clean water system for rural
+                                </h4>
+                                <span class="product__subtitle">Event management is the application of project management </span>
+                            </div>
+                            <div class="product__range">
+                                <div class="product__prices">
+                                    <div class="product__progress">
+                                        <div class="progress__bar" style="width: 73%;">
+                                            <div class="progress__count">
+                                                <div class="count-text" data-speed="2000" data-stop="73">73.23%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__price">
+                                        <div class="product__price-raise">
+                                            Raise <p class="product__price-raise-text">$24.99</p>
+                                        </div>
+                                        <div class="product__price-goal">
+                                            Goal <p class="product__price-goal-text">$124.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+        </section>
+
+        <!--=============== NEW ARRIVALS ===============-->
+        <section class="new section">
+            <div class="container d-flex new__container">
+                <div class="new__left">
+                    <div class="welcome__sub-title sub-title"><span class="welcome__sub-title-hr sub-title-hr"></span> Welcome to Charity</div>
+                    <h2 class="title">Helping each other can make world better</h2>
+                </div>
+                <div class="new__right">
+                    <div class="new__box">
+                        <div class="new__icon">
+                            <img src="./assets/img/icon/education (1).png" alt="">
+                        </div>
+                        <h3 class="new__title">Healthy <br>
+                            Food</h3>
+                    </div>
+                    <div class="new__box">
+                        <div class="new__icon">
+                            <img src="./assets/img/icon/syringe.png" alt="">
+                        </div>
+
+                        <h3 class="new__title">Healthy <br>
+                            Food</h3>
+                    </div>
+                    <div class="new__box">
+                        <div class="new__icon">
+                            <img src="./assets/img/icon/water (1).png" alt="">
+                        </div>
+
+                        <h3 class="new__title">Healthy <br>
+                            Food</h3>
+                    </div>
+                    <div class="new__box">
+                        <div class="new__icon">
+                            <img src="./assets/img/icon/water (1).png" alt="">
+                        </div>
+
+                        <h3 class="new__title">Healthy <br>
+                            Food</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================ Professional =================-->
+        <section class="professional section">
+            <div class="container">
+                <div class="section__title center">
+                    <div class="welcome__sub-title sub-title"><span class="welcome__sub-title-hr sub-title-hr center"></span> Professional Volunteers</div>
+                    <h2 class="title">Meet the best team behind
+                        <br> our success story</h2>
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="professional__box swiper-slide">
+                            <div class="professional__card">
+                                <div class="professional__content">
+                                    <div class="professional__image">
+                                        <img src="./assets/img/team/team-3-600x445.jpg" alt="">
+                                    </div>
+                                </div>
+        
+                                <div class="professional__info">
+                                    <div class="professional__name">
+                                        Somename
+                                    </div>
+                                    <div class="professional__job">
+                                        Volunteer
+                                    </div>
+                                    <div class="professional__desc">
+                                        There are many of lorem ipsum available but the have in some form.
+                                    </div>
+                                    <div class="professional__icon">
+                                        <i class='bx bxl-facebook-circle'></i>
+                                        <i class='bx bxl-twitter' ></i>
+                                        <i class='bx bxs-phone' ></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="professional__card">
+                                <div class="professional__content">
+                                    <div class="professional__image">
+                                        <img src="./assets/img/team/team-1-600x445.jpg" alt="">
+                                    </div>
+                                </div>
+        
+                                <div class="professional__info">
+                                    <div class="professional__name">
+                                        Somename
+                                    </div>
+                                    <div class="professional__job">
+                                        Volunteer
+                                    </div>
+                                    <div class="professional__desc">
+                                        There are many of lorem ipsum available but the have in some form.
+                                    </div>
+                                    <div class="professional__icon">
+                                        <i class='bx bxl-facebook-circle'></i>
+                                        <i class='bx bxl-twitter' ></i>
+                                        <i class='bx bxs-phone' ></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="professional__card">
+                                <div class="professional__content">
+                                    <div class="professional__image">
+                                        <img src="./assets/img/team/team-5.jpg" alt="">
+                                    </div>
+                                </div>
+        
+                                <div class="professional__info">
+                                    <div class="professional__name">
+                                        Somename
+                                    </div>
+                                    <div class="professional__job">
+                                        Volunteer
+                                    </div>
+                                    <div class="professional__desc">
+                                        There are many of lorem ipsum available but the have in some form.
+                                    </div>
+                                    <div class="professional__icon">
+                                        <i class='bx bxl-facebook-circle'></i>
+                                        <i class='bx bxl-twitter' ></i>
+                                        <i class='bx bxs-phone' ></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="professional__card">
+                                <div class="professional__content">
+                                    <div class="professional__image">
+                                        <img src="./assets/img/team/team-4-600x445.jpg" alt="">
+                                    </div>
+                                </div>
+        
+                                <div class="professional__info">
+                                    <div class="professional__name">
+                                        Somename
+                                    </div>
+                                    <div class="professional__job">
+                                        Volunteer
+                                    </div>
+                                    <div class="professional__desc">
+                                        There are many of lorem ipsum available but the have in some form.
+                                    </div>
+                                    <div class="professional__icon">
+                                        <i class='bx bxl-facebook-circle'></i>
+                                        <i class='bx bxl-twitter' ></i>
+                                        <i class='bx bxs-phone' ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                
+                        <div class="professional__box swiper-slide">
+                            <div class="professional__card">
+                                <div class="professional__content">
+                                    <div class="professional__image">
+                                        <img src="./assets/img/team/team-1-600x445.jpg" alt="">
+                                    </div>
+                                </div>
+        
+                                <div class="professional__info">
+                                    <div class="professional__name">
+                                        Somename
+                                    </div>
+                                    <div class="professional__job">
+                                        Volunteer
+                                    </div>
+                                    <div class="professional__desc">
+                                        There are many of lorem ipsum available but the have in some form.
+                                    </div>
+                                    <div class="professional__icon">
+                                        <i class='bx bxl-facebook-circle'></i>
+                                        <i class='bx bxl-twitter' ></i>
+                                        <i class='bx bxs-phone' ></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="professional__card">
+                                <div class="professional__content">
+                                    <div class="professional__image">
+                                        <img src="./assets/img/team/team-2-600x445.jpg" alt="">
+                                    </div>
+                                </div>
+        
+                                <div class="professional__info">
+                                    <div class="professional__name">
+                                        Somename
+                                    </div>
+                                    <div class="professional__job">
+                                        Volunteer
+                                    </div>
+                                    <div class="professional__desc">
+                                        There are many of lorem ipsum available but the have in some form.
+                                    </div>
+                                    <div class="professional__icon">
+                                        <i class='bx bxl-facebook-circle'></i>
+                                        <i class='bx bxl-twitter' ></i>
+                                        <i class='bx bxs-phone' ></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="professional__card">
+                                <div class="professional__content">
+                                    <div class="professional__image">
+                                        <img src="./assets/img/team/team-3-600x445.jpg" alt="">
+                                    </div>
+                                </div>
+        
+                                <div class="professional__info">
+                                    <div class="professional__name">
+                                        Somename
+                                    </div>
+                                    <div class="professional__job">
+                                        Volunteer
+                                    </div>
+                                    <div class="professional__desc">
+                                        There are many of lorem ipsum available but the have in some form.
+                                    </div>
+                                    <div class="professional__icon">
+                                        <i class='bx bxl-facebook-circle'></i>
+                                        <i class='bx bxl-twitter' ></i>
+                                        <i class='bx bxs-phone' ></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="professional__card">
+                                <div class="professional__content">
+                                    <div class="professional__image">
+                                        <img src="./assets/img/team/team-4-600x445.jpg" alt="">
+                                    </div>
+                                </div>
+        
+                                <div class="professional__info">
+                                    <div class="professional__name">
+                                        Somename
+                                    </div>
+                                    <div class="professional__job">
+                                        Volunteer
+                                    </div>
+                                    <div class="professional__desc">
+                                        There are many of lorem ipsum available but the have in some form.
+                                    </div>
+                                    <div class="professional__icon">
+                                        <i class='bx bxl-facebook-circle'></i>
+                                        <i class='bx bxl-twitter' ></i>
+                                        <i class='bx bxs-phone' ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+                  </div>
+
+                <!-- <div class="professional__box swiper-slide">
+                    <div class="professional__card">
+                        <div class="professional__content">
+                            <div class="professional__image">
+                                <img src="./assets/img/product/bg-6.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="professional__info">
+                            <div class="professional__name">
+                                Somename
+                            </div>
+                            <div class="professional__job">
+                                Volunteer
+                            </div>
+                            <div class="professional__desc">
+                                There are many of lorem ipsum available but the have in some form.
+                            </div>
+                            <div class="professional__icon">
+                                <i class='bx bxl-facebook-circle'></i>
+                                <i class='bx bxl-twitter' ></i>
+                                <i class='bx bxs-phone' ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="professional__card">
+                        <div class="professional__content">
+                            <div class="professional__image">
+                                <img src="./assets/img/product/bg-6.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="professional__info">
+                            <div class="professional__name">
+                                Somename
+                            </div>
+                            <div class="professional__job">
+                                Volunteer
+                            </div>
+                            <div class="professional__desc">
+                                There are many of lorem ipsum available but the have in some form.
+                            </div>
+                            <div class="professional__icon">
+                                <i class='bx bxl-facebook-circle'></i>
+                                <i class='bx bxl-twitter' ></i>
+                                <i class='bx bxs-phone' ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="professional__card">
+                        <div class="professional__content">
+                            <div class="professional__image">
+                                <img src="./assets/img/product/bg-6.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="professional__info">
+                            <div class="professional__name">
+                                Somename
+                            </div>
+                            <div class="professional__job">
+                                Volunteer
+                            </div>
+                            <div class="professional__desc">
+                                There are many of lorem ipsum available but the have in some form.
+                            </div>
+                            <div class="professional__icon">
+                                <i class='bx bxl-facebook-circle'></i>
+                                <i class='bx bxl-twitter' ></i>
+                                <i class='bx bxs-phone' ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="professional__card">
+                        <div class="professional__content">
+                            <div class="professional__image">
+                                <img src="./assets/img/product/bg-6.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="professional__info">
+                            <div class="professional__name">
+                                Somename
+                            </div>
+                            <div class="professional__job">
+                                Volunteer
+                            </div>
+                            <div class="professional__desc">
+                                There are many of lorem ipsum available but the have in some form.
+                            </div>
+                            <div class="professional__icon">
+                                <i class='bx bxl-facebook-circle'></i>
+                                <i class='bx bxl-twitter' ></i>
+                                <i class='bx bxs-phone' ></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+
+        <!-- =========== Support ========== -->
+        <section class="support section">
+            <div class="support__container">
+                <div class="support__gallry">
+                    <div class="support__img"> 
+                        <img src="./assets/img/support/brand-3.png" alt="">    
+                    </div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-5.png" alt="">   </div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-4.png" alt=""> </div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-3.png" alt="">   </div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-5.png" alt=""></div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-4.png" alt=""> </div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-3.png" alt="">   </div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-5.png" alt=""> </div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-4.png" alt=""> </div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-3.png" alt="">   </div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-5.png" alt=""> </div>
+                    <div class="support__img"> <img src="./assets/img/support/brand-4.png" alt=""> </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== Event ============== -->
+        <section class="event section">
+            <div class="container d-flex event__container">
+                <div class="event__left">
+                    <div class="welcome__sub-title sub-title"><span class="welcome__sub-title-hr sub-title-hr"></span> Welcome to Charity</div>
+                    <h2 class="title">Helping each other can make world better</h2>
+                    <a href="#" class="button button--flex">
+                        <i class='bx bx-right-arrow-alt button__icon'></i>
+                        <span class="button__text">Learn More</span>
+                    </a>
+                </div>
+                <div class="event__right">
+                    <div class="event__box">
+                        <div class="event__card">
+                            <div class="event__image">
+                                <a href="#"><img src="./assets/img/event/event-6-600x650.jpg" href="#" alt=""></a>
+                            </div>
+                            <div class="event__date">
+                                <span class="event__date-month">March</span>
+                                <span class="event__date-day">04</span>
+                            </div>
+                            <div class="event__content">
+                                <div class="event-location">
+                                    <i class='bx bx-navigation'></i>
+                                    Ha Giang, Viet Nam
+                                </div>
+                                <h4 class="event-title">Play for the world with us</h4>
+                            </div>
+                        </div>
+                        <div class="event__card">
+                            <div class="event__image">
+                                <a href="#"><img src="./assets/img/event/event-5-600x650.jpg" href="#" alt=""></a>
+                            </div>
+                            <div class="event__date">
+                                <span class="event__date-month">March</span>
+                                <span class="event__date-day">04</span>
+                            </div>
+                            <div class="event__content">
+                                <div class="event-location">
+                                    <i class='bx bx-navigation'></i>
+                                    Ha Giang, Viet Nam
+                                </div>
+                                <h4 class="event-title">Play for the world with us</h4>
+                            </div>
+                        </div>
+                        <div class="event__card">
+                            <div class="event__image">
+                                <a href="#"><img src="./assets/img/event/event-4-600x650.jpg" href="#" alt=""></a>
+                            </div>
+                            <div class="event__date">
+                                <span class="event__date-month">March</span>
+                                <span class="event__date-day">04</span>
+                            </div>
+                            <div class="event__content">
+                                <div class="event-location">
+                                    <i class='bx bx-navigation'></i>
+                                    Ha Giang, Viet Nam
+                                </div>
+                                <h4 class="event-title">Play for the world with us</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== Introduction ============== -->
+        <section class="intro section">
+            <div class="container intro__container">
+                <div class="intro__left">
+                    <h2 class="title">Helping each other can make world better</h2>
+
+                </div>
+                <div class="intro__right">
+                    <a href="#" class="button button--flex">
+                        <i class='bx bx-right-arrow-alt button__icon'></i>
+                        <span class="button__text">Learn More</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== Become ============== -->
+        <section class="section become"> 
+            <div class="container">
+                <div class="section__title center">
+                    <div class="welcome__sub-title sub-title"><span class="welcome__sub-title-hr sub-title-hr center"></span> Professional Volunteers</div>
+                    <h2 class="title">Meet the best team behind
+                        <br> our success story</h2>
+                </div>
+            </div>
+            <div class="container become__container">
+                <div class="become__left">
+                    <h4 class="sub__title become__title">Helping each other can make world better</h4>
+                    <p class="become__text-editor">
+                        There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou or randomised words even slightly believable. All the Lorem Ipsum generators on the Internet tend. All the Lorem Ipsum generators on the Internet tend.
+                    </p>
+                    <div class="become__details">
+                        <div class="become__details-description">
+                            <i class='bx bxs-check-circle become__details-icon' style='color:#15c69e'  ></i>
+                            <p class="become__details-text">We always deliver on time.</p>
+                        </div>
+                        <div class="become__details-description">
+                            <i class='bx bxs-check-circle become__details-icon' style='color:#15c69e'  ></i>
+                            <p class="become__details-text">We always deliver on time.</p>
+                        </div>
+                        <div class="become__details-description">
+                            <i class='bx bxs-check-circle become__details-icon' style='color:#15c69e'  ></i>
+                            <p class="become__details-text">Join the community to give education for children</p>
+                        </div>
+                        <div class="become__details-description">
+                            <i class='bx bxs-check-circle become__details-icon' style='color:#15c69e'  ></i>
+                            <p class="become__details-text">Find the popular cause and donate them</p>
+                        </div>
+                    </div>
+                    <div class="become__img">
+                        <div class="become__img-icon">
+                            <img src="./assets/img/icon/volunteer.png" alt="">
+                        </div>
+                        <img src="./assets/img/become/image-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="become__right">
+                    <div class="become__wrap">
+                        <form action="" class="become__form">
+                            <div class="become__form-row">
+                                <input type="text" placeholder="Last Name" id="become-lname" class="become__lname">
+                                <input type="text" placeholder="First Name" id="become-fname" class="become__fname">
+                            </div>
+                            <input type="text" placeholder="Email Address" id="become-email">
+                            <input type="text" placeholder="Address" id="become-address">
+                            <input type="text" placeholder="Date of bate" id="become-date">
+                            <input type="text" placeholder="Occupation" id="become-occupation">
+                            <input type="text" placeholder="Your message" id="become-message">
+                            <input type="submit" class="become__submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== Blog ================== -->
+        <section class="blog">
+            <div class="container blog__title">
+                <div class="blog__left">
+                    <div class="welcome__sub-title sub-title"><span class="welcome__sub-title-hr sub-title-hr center"></span> Get Daily Updates</div>
+                    <h2 class="title">Latest news & articles directly
+                        <br> coming from the blog</h2>
+                </div>
+                <div class="blog__right">
+                    <a href="#" class="button button--flex">
+                        <i class='bx bx-right-arrow-alt button__icon'></i>
+                        <span class="button__text">View All</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container blog__content">
+                <div class="blog__box-1">
+                    <img src="./assets/img/blog/blog-1.jpeg" alt="" class="">
+                    <div class="blog__text-1">
+                        <div class="blog__meta-1">
+                            <div class="blog__date-1">8 Dec, 2020</div> &#824
+                            <div class="blog__comment-1">
+                                0 comment</div>
+                        </div>
+                        <div class="blog__heading-1">
+                            Donation is Hope for Poor Childrens
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__box-2">                   
+                    <div class="blog__post">
+                        <img src="./assets/img/blog/blog-2.jpg" alt="" class="blog__post-img">
+                        <div class="blog__text-2">
+                            <div class="blog__meta-2">
+                                <div class="blog__date-2"> <i class='bx bxs-calendar'></i>8 Dec, 2020</div> &#824
+                                <div class="blog__comment-2"><i class='bx bx-message-square-dots' ></i>0 comment</div>
+                            </div>
+                            <div class="blog__heading-2">
+                                Donation is Hope for Poor Childrens
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__post">
+                        <img src="./assets/img/blog/blog-3.jpg" alt="" class="blog__post-img">
+                        <div class="blog__text-2">
+                            <div class="blog__meta-2">
+                                <div class="blog__date-2"> <i class='bx bxs-calendar'></i>8 Dec, 2020</div> &#824
+                                <div class="blog__comment-2"><i class='bx bx-message-square-dots' ></i>0 comment</div>
+                            </div>
+                            <div class="blog__heading-2">
+                                Donation is Hope for Poor Childrens
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__post">
+                        <img src="./assets/img/blog/blog-4.jpg" alt="" class="blog__post-img">
+                        <div class="blog__text-2">
+                            <div class="blog__meta-2">
+                                <div class="blog__date-2"> <i class='bx bxs-calendar'></i>8 Dec, 2020</div> &#824
+                                <div class="blog__comment-2"><i class='bx bx-message-square-dots' ></i>0 comment</div>
+                            </div>
+                            <div class="blog__heading-2">
+                                Donation is Hope for Poor Childrens
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__box container">
+            <div class="footer-col-3">
+                <a href="index.html" class="footer__logo">
+                    Haplies
+                </a>
+                <p class="footer__desc">
+                    Lorem ipsum dolor sit ame consect etur pisicing elit sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <a href="#" class="button">
+                    <span class="button__text">View All</span>
+                </a>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html" class="footer__heading">
+                    Company
+                </a>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#">About us</a></li>
+                    <li class="footer__list-item"><a href="#">Latest event</a></li>
+                    <li class="footer__list-item"><a href="#">How it works</a></li>
+                    <li class="footer__list-item"><a href="#">News</a></li>
+                    <li class="footer__list-item"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html" class="footer__heading">
+                    Contact us
+                </a>
+                <div class="footer__contact">
+                    <div class="footer__contact-box">
+                        <div class="footer__contact-icon">
+                            <i class='bx bx-mail-send' ></i>
+                        </div>
+                        <div class="footer__contact-text">
+                            <div class="footer__contact-title">Send Email</div>
+                            <div class="footer__contact-desc">contact@example.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact-box">
+                        <div class="footer__contact-icon">
+                            <i class='bx bx-map-alt' ></i>
+                        </div>
+                        <div class="footer__contact-text">
+                            <div class="footer__contact-title">Visit Office</div>
+                            <div class="footer__contact-desc">Ha Noi, Viet Nam</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact-box">
+                        <div class="footer__contact-icon">
+                            <i class='bx bxs-phone' ></i>
+                        </div>
+                        <div class="footer__contact-text">
+                            <div class="footer__contact-title">Call Anytime</div>
+                            <div class="footer__contact-desc">666 888 0000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col-3">
+                <a href="index.html" class="footer__heading">
+                    Newsletter
+                </a>
+                <p class="footer__desc">
+                    Lorem ipsum dolor sit ame consect etur pisicing elit sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <div class="footer__subscribe">
+                    <input type="email" placeholder="Enter your email" class="footer__input">
+
+                    <button class="button button--flex footer__button">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                        <span class="button__text">Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; Haplies. All rigths reserved</p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+    <!--=============== STYLE SWITCHER ===============-->
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/checkLogin.js"></script>
+</body>
+</html>

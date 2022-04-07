@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+
+    <link rel="shortcut icon" href="./assets/img/logo/Exclude.png" type="image/x-icon">
+
+    <title>Nonprofit - Haplies</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <div class="box-shadow">
+            <div class="top__bar container d-flex">
+                <div class="top__info">
+                    <a href="#" class="top__item">
+                        <i class='bx bxs-envelope top__link-icon'></i>
+                        <span class="top__link-text">contact@gmail.com</span>
+                    </a>
+                    <a href="#" class="top__item">
+                        <i class='bx bxs-phone top__link-icon'></i>
+                        <span class="top__link-text">666 888 000</span>
+                    </a>
+                </div>
+    
+                <div class="top__social">
+                    <a href="" class="top__social-icon"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-twitter'></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-youtube'></i></a>
+                    <a href="" class="top__social-icon"><i class='bx bxl-pinterest'></i></a>
+                </div>
+    
+                <div class="top__donate">
+                    <a href="#" class="button button--flex">
+                        <i class='bx bxs-heart button__icon' ></i>
+                        <span class="button__text">Donate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav bar -->
+        <div id="fixed">
+            <div class="nav__bar container">
+                <a href="index.html" class="nav__logo">
+                    <!-- <img src="./assets/img/logo/Exclude.png" alt="" class="nav__logo-img"> -->
+                    Haplies
+                </a>
+    
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link ">Home</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="causes.html" class="nav__link ">Our Causes</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="event.html" class="nav__link ">Event</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="blog.html" class="nav__link active-link">Blog</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="faq.html" class="nav__link">Faq's</a>
+                        </li>
+    
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+    
+                    <div class="nav__close" id="nav-close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+    
+                <div class="nav__btns">
+                    <div class="nav__search" id="search-button">
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <div class="login__toggle" id="login-button">
+                        <i class="bx bx-user"></i>
+                    </div>
+    
+                    <div class="nav__wishlist" id="cart-wishlist">
+                        <a href="#"><i class='bx bx-heart'></i></a>
+                    </div>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="bx bx-grid-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!--=============== search ===============-->
+    <div class="search" id="search">
+        <div class="search__box">
+            <form class="search__form" id="search__form">
+                <div class="search-control">
+                    <input type="search" placeholder="Search" id="search" class="search__input">
+                    <input type="submit" value="Search" class="button__search">
+                </div>
+              </form>
+        </div>
+    </div>
+
+    <!--=============== user ===============-->
+    <div class="user" id="user">
+        <div class="user__box sign__in" id="sign-in">
+            <header class="user__header">
+                
+                <h4 class="signin active-login">Sign in</h4>
+                <h4 class="signup" onclick="showSignup()">Sign up</h4>
+                <i class="bx bx-x user__close" id="signin-close"></i>
+            </header>
+    
+            <form action="" id="signin-form" class="form">
+
+                <!-- email -->
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Email" id="signin-email">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Email can't be blank</small>
+                </div>
+                <!-- password -->
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="signin-password">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Password can't be blank</small>
+                    <p class="signup"><a href="registration.html">Forgot password?</a></p>
+                </div>
+
+                <input type="submit" value="Login" id="sign-in-submit">
+                <!-- login social -->
+                <div class="login__social">
+                    <div class="login-or">
+                        <div class="social-hr"></div>
+                        <span>Or</span>
+                        <div class="social-hr"></div>
+                    </div>
+                    <div class="social__icon">
+                        <a href="#" class="button button--flex social-btn btn-facebook">
+                            <i class='bx bxl-facebook button__icon' ></i>
+                            <span class="button__text">Facebook</span>
+                        </a>
+                        <a href="#" class="button button--flex social-btn btn-google">
+                            <i class='bx bxl-google button__icon' ></i>
+                            <span class="button__text">Goggle</span>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="user__box sign__up" id="sign-up">
+            <header class="user__header">
+                
+                <h4 class="signin" onclick="showSignin()">Sign in</h4>
+                <h4 class="signup active-login">Sign up</h4>
+                <i class="bx bx-x user__close" id="signup-close"></i>
+            </header>
+    
+            <form action="" id="signup-form" class="form">
+                <!-- user name -->
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Username" id="username">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Username can't be blank</small>
+                </div>
+                <!-- email -->
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="hello@gmail.com" id="email">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Email can't be blank</small>
+                </div>
+                <!-- password -->
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="password">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Password can't be blank</small>
+                </div>
+                <!-- user name -->
+                <div class="form-control">
+                    <label for="check-password">Password</label>
+                    <input type="password" placeholder="Password" id="check-password">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-error-circle' ></i>
+                    <small class="">Password can't be blank</small>
+                </div>
+    
+                <input type="submit" value="Sign Up" id="sign-up-submit">
+                <p class="signup">Do not password<a href="registration.html">Sign up now</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+
+        <!-- =============== Event ============== -->
+        <section class="event section">
+            <div class="container d-flex event__container">
+                <div class="event__left">
+                    <div class="welcome__sub-title sub-title"><span class="welcome__sub-title-hr sub-title-hr"></span> Welcome to Charity</div>
+                    <h2 class="title">Helping each other can make world better</h2>
+                    <a href="#" class="button button--flex">
+                        <i class='bx bx-right-arrow-alt button__icon'></i>
+                        <span class="button__text">Learn More</span>
+                    </a>
+                </div>
+                <div class="event__right">
+                    <div class="event__box">
+                        <div class="event__card">
+                            <div class="event__image">
+                                <a href="#"><img src="./assets/img/event/event-6-600x650.jpg" href="#" alt=""></a>
+                            </div>
+                            <div class="event__date">
+                                <span class="event__date-month">March</span>
+                                <span class="event__date-day">04</span>
+                            </div>
+                            <div class="event__content">
+                                <div class="event-location">
+                                    <i class='bx bx-navigation'></i>
+                                    Ha Giang, Viet Nam
+                                </div>
+                                <h4 class="event-title">Play for the world with us</h4>
+                            </div>
+                        </div>
+                        <div class="event__card">
+                            <div class="event__image">
+                                <a href="#"><img src="./assets/img/event/event-5-600x650.jpg" href="#" alt=""></a>
+                            </div>
+                            <div class="event__date">
+                                <span class="event__date-month">March</span>
+                                <span class="event__date-day">04</span>
+                            </div>
+                            <div class="event__content">
+                                <div class="event-location">
+                                    <i class='bx bx-navigation'></i>
+                                    Ha Giang, Viet Nam
+                                </div>
+                                <h4 class="event-title">Play for the world with us</h4>
+                            </div>
+                        </div>
+                        <div class="event__card">
+                            <div class="event__image">
+                                <a href="#"><img src="./assets/img/event/event-4-600x650.jpg" href="#" alt=""></a>
+                            </div>
+                            <div class="event__date">
+                                <span class="event__date-month">March</span>
+                                <span class="event__date-day">04</span>
+                            </div>
+                            <div class="event__content">
+                                <div class="event-location">
+                                    <i class='bx bx-navigation'></i>
+                                    Ha Giang, Viet Nam
+                                </div>
+                                <h4 class="event-title">Play for the world with us</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__box container">
+            <div class="footer-col-3">
+                <a href="index.html" class="footer__logo">
+                    Haplies
+                </a>
+                <p class="footer__desc">
+                    Lorem ipsum dolor sit ame consect etur pisicing elit sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <a href="#" class="button">
+                    <span class="button__text">View All</span>
+                </a>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html" class="footer__heading">
+                    Company
+                </a>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#">About us</a></li>
+                    <li class="footer__list-item"><a href="#">Latest event</a></li>
+                    <li class="footer__list-item"><a href="#">How it works</a></li>
+                    <li class="footer__list-item"><a href="#">News</a></li>
+                    <li class="footer__list-item"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html" class="footer__heading">
+                    Contact us
+                </a>
+                <div class="footer__contact">
+                    <div class="footer__contact-box">
+                        <div class="footer__contact-icon">
+                            <i class='bx bx-mail-send' ></i>
+                        </div>
+                        <div class="footer__contact-text">
+                            <div class="footer__contact-title">Send Email</div>
+                            <div class="footer__contact-desc">contact@example.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact-box">
+                        <div class="footer__contact-icon">
+                            <i class='bx bx-map-alt' ></i>
+                        </div>
+                        <div class="footer__contact-text">
+                            <div class="footer__contact-title">Visit Office</div>
+                            <div class="footer__contact-desc">Ha Noi, Viet Nam</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact-box">
+                        <div class="footer__contact-icon">
+                            <i class='bx bxs-phone' ></i>
+                        </div>
+                        <div class="footer__contact-text">
+                            <div class="footer__contact-title">Call Anytime</div>
+                            <div class="footer__contact-desc">666 888 0000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col-3">
+                <a href="index.html" class="footer__heading">
+                    Newsletter
+                </a>
+                <p class="footer__desc">
+                    Lorem ipsum dolor sit ame consect etur pisicing elit sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <div class="footer__subscribe">
+                    <input type="email" placeholder="Enter your email" class="footer__input">
+
+                    <button class="button button--flex footer__button">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                        <span class="button__text">Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; Haplies. All rigths reserved</p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+    <!--=============== STYLE SWITCHER ===============-->
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/checkLogin.js"></script>
+</body>
+</html>

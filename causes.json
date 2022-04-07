@@ -1,0 +1,92 @@
+[
+    {
+        "tag" : "medical",
+        "imgSrc" : "./assets/img/causes/2.jpg",
+        "title" : "Medical online system for rural",
+        "subtitle" : "Event management is the application of project management",
+        "bar" : "40",
+        "priceRaise" : "50.25",
+        "priceGoal" : "170.25"
+    },
+    {
+        "tag" : "clean-water",
+        "imgSrc" : "./assets/img/causes/1.jpg",
+        "title" : "Clean water system",
+        "subtitle" : "Event management is the application of project management",
+        "bar" : "60",
+        "priceRaise" : "40.25",
+        "priceGoal" : "80.25"
+    },
+    {
+        "tag" : "healthy-food",
+        "imgSrc" : "./assets/img/causes/3.jpg",
+        "title" : "Clean water system for rural",
+        "subtitle" : "Event management is the application of project management",
+        "bar" : "40",
+        "priceRaise" : "50.25",
+        "priceGoal" : "170.25"
+    },
+    {
+        "tag" : "education",
+        "imgSrc" : "./assets/img/causes/4.jpg",
+        "title" : "Clean water system for rural",
+        "subtitle" : "Event management is the application of project management",
+        "bar" : "40",
+        "priceRaise" : "50.25",
+        "priceGoal" : "170.25"
+    },
+    {
+        "tag" : "medical",
+        "imgSrc" : "./assets/img/causes/1.jpg",
+        "title" : "Clean water system for rural",
+        "subtitle" : "Event management is the application of project management",
+        "bar" : "40",
+        "priceRaise" : "50.25",
+        "priceGoal" : "170.25"
+    },
+    {
+        "tag" : "animal",
+        "imgSrc" : "./assets/img/causes/1.jpg",
+        "title" : "Clean water system for rural",
+        "subtitle" : "Event management is the application of project management",
+        "bar" : "40",
+        "priceRaise" : "50.25",
+        "priceGoal" : "170.25"
+    },
+    {
+        "tag" : "medical",
+        "imgSrc" : "./assets/img/causes/1.jpg",
+        "title" : "Clean water system for rural",
+        "subtitle" : "Event management is the application of project management",
+        "bar" : "40",
+        "priceRaise" : "50.25",
+        "priceGoal" : "170.25"
+    },
+    {
+        "tag" : "medical",
+        "imgSrc" : "./assets/img/causes/1.jpg",
+        "title" : "Clean water system for rural",
+        "subtitle" : "Event management is the application of project management",
+        "bar" : "40",
+        "priceRaise" : "50.25",
+        "priceGoal" : "170.25"
+    },
+    {
+        "tag" : "homeless",
+        "imgSrc" : "./assets/img/causes/1.jpg",
+        "title" : "Clean water system for rural",
+        "subtitle" : "Event management is the application of project management",
+        "bar" : "40",
+        "priceRaise" : "50.25",
+        "priceGoal" : "170.25"
+    },
+    {
+        "tag" : "medical",
+        "imgSrc" : "./assets/img/causes/1.jpg",
+        "title" : "Clean water system for rural",
+        "subtitle" : "Event management is the application of project management",
+        "bar" : "40",
+        "priceRaise" : "50.25",
+        "priceGoal" : "170.25"
+    }
+]
