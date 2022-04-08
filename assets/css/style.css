@@ -1903,6 +1903,147 @@ p {
     display: flex !important;
 }
 
+
+
+/* tabnav */
+.detailes-tab {
+    padding-top: var(--mb-3-6);
+}
+.detailes-tab-list {
+    display: flex;
+    column-gap: 6rem;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.tabs {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.active-tabs {
+    display: block;
+    position: relative;
+    padding-bottom: 1.2rem;
+}
+.tabs:hover::after,
+.active-tabs::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    bottom: -1px;
+    animation: test ease-in-out .3s;
+}
+
+.detailes-tab-content {
+    margin-top: var(--mb-3-6);
+}
+
+[data-tab-content] {
+    display: none;
+}
+.active-tab[data-tab-content] {
+    display: block;
+}
+
+
+#description h6 {
+    margin: var(--mb-2-4) 0;
+}
+#description p {
+    color: var(--light);
+    text-align: justify;
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 2rem;
+}
+
+.galleryIMG {
+    max-width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    height: 180px;
+    position: relative;
+    transition: .3s;
+}
+
+.galleryIMG:hover {
+    transform: translateY(-4px);
+    box-shadow: 1px 1px 10px var(--text);
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: .2s transform;
+}
+
+#selectedImage {
+    max-height: 100%;
+}
+
+.popup-icon {
+    position: absolute;
+    color: var(--white-color);
+    top: 50%;font-size: var(--h2-font-size);
+    cursor: pointer;
+}
+.popup-icon.bxs-chevron-right {
+    right: 0%;
+}
+.popup-icon.bxs-chevron-left {
+    left: 0%;
+}
+
+.donnors__box {
+    display: flex;
+    column-gap: 2rem;
+    padding: 2rem 2rem 2rem 4rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--mb-3-6);
+}
+.donnor__img {
+    display: block;
+    overflow: hidden;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.donnor__img img {
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
+}
+
+.donnor__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.donnor__name {
+    font-size: var(--h5-font-size);
+    font-weight: 600;
+}
 /*=============== SCROLL UP ===============*/
 .scrollup {
     position: fixed;
@@ -2173,25 +2314,34 @@ p {
     }
 }
 
+
 @-webkit-keyframes zoomin {
     from {transform: scale(1, 1);}
     to {transform: scale(1.5, 1.5);}
-  }
+}
   
   
-  @keyframes zoomin {
+@keyframes zoomin {
     from {transform: scale(1, 1);}
     to {transform: scale(1.5, 1.5);}
-  }
-  @keyframes zoomInfinity {
+}
+@keyframes zoomInfinity {
     0%, 20% , 40%, 60%, 80%, 100% {
         transform: scale(1, 1);
     }
     10%, 30%, 50%, 70%, 90% {
         transform: scale(1.1, 1.1);
     }
-  }
+}
 
+@keyframes test {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
 /* width */
 ::-webkit-scrollbar {
     width:8px;

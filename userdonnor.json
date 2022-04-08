@@ -1,0 +1,26 @@
+[
+    {
+        "imgSrc" : "./assets/img/team/team-1-600x445.jpg",
+        "name" : "Jane Marry ",
+        "money" : "40",
+        "date" : "May 25, 2022"
+    },
+    {
+        "imgSrc" : "./assets/img/team/team-2-600x445.jpg",
+        "name" : "Melinda ",
+        "money" : "140",
+        "date" : "Oct 25, 2022"
+    },
+    {
+        "imgSrc" : "./assets/img/team/team-3-600x445.jpg",
+        "name" : "Admin ",
+        "money" : "20",
+        "date" : "May 5, 2022"
+    },
+    {
+        "imgSrc" : "./assets/img/team/team-4-600x445.jpg",
+        "name" : "Humani ",
+        "money" : "80",
+        "date" : "May 25, 2021"
+    }
+]
