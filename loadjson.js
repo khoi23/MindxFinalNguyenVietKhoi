@@ -27,7 +27,7 @@ function loadJSON(){
         let html = '';
         data.forEach(causes => {
             html += `
-            <a class="causes__card ${causes.tag}" href="#">
+            <a class="causes__card ${causes.tag}" href="causes-details.html">
                 <div class="product__content">
                     <div class="product__tag">${causes.tag}</div>
                     <div class="product__icon">
