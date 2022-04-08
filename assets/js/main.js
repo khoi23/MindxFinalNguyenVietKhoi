@@ -12,13 +12,11 @@ const search = document.getElementById('search'),
     searchButton = document.getElementById('search-button'),
     searchBox = document.querySelector('.search__box')
 
-    
-/*===== LOGIN SHOW =====*/
 /* Validate if constant exists */
 if(searchButton) {
     searchButton.addEventListener('click', () => {
         search.classList.add('show-search');
-    })
+    });
 }
 if(search) {
     search.addEventListener('click', () => {
@@ -121,6 +119,37 @@ if(navClose) {
     })
 }
 
+/*=============== SHOW MODAL ===============*/
+const modalbox = document.getElementById('modal-succes'),
+        modalToggle = document.getElementById('button-modal'),
+        modalClose = document.getElementById('modal-close'),
+        modalContent = document.getElementById('modal-open')
+
+
+/*===== MODAL SHOW =====*/
+/* Validate if constant exists */
+if(modalToggle) {
+    modalToggle.addEventListener('click', () => {
+        modalbox.classList.add('show-modal');
+    });
+}
+
+/*===== MODAL HIDDEN =====*/
+/* Validate if constant exists */
+if(modalClose) {
+    modalClose.addEventListener('click', () => {
+        modalbox.classList.remove('show-modal');
+    });
+}
+
+if(modalbox) {
+    modalbox.addEventListener('click', () => {
+        modalbox.classList.remove('show-modal');
+    })
+    modalContent.addEventListener('click', (e) => {
+        e.stopPropagation()
+    })
+}
 /** ============ Slider ============== */
 const mySlide = document.querySelectorAll('.slider__box'),
 	  dot = document.querySelectorAll('.dot');

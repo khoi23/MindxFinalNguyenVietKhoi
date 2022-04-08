@@ -123,7 +123,6 @@ console.log(localUser);
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     checkLogin();
-
 });
 function checkLogin() {
     let vloginEmail = loginEmail.value.trim()

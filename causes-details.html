@@ -133,7 +133,6 @@
     <div class="user" id="user">
         <div class="user__box sign__in" id="sign-in">
             <header class="user__header">
-                
                 <h4 class="signin active-login">Sign in</h4>
                 <h4 class="signup" onclick="showSignup()">Sign up</h4>
                 <i class="bx bx-x user__close" id="signin-close"></i>
@@ -228,6 +227,20 @@
         </div>
     </div>
 
+    <!-- ================ donate succes ================== -->
+    <div class="modal-succes" id="modal-succes">
+        <div class="modal__box" id="modal-open">
+            <header class="modal__header">
+                <i class="bx bx-x modal__close" id="modal-close"></i>
+            </header>
+            <div class="modal__body">
+                <i class='bx bx-check-double modal__icon'></i>
+                <h2 class="modal__thank">Thank You!</h2>
+                <p class="modal__text">Your submission is received and we will contact you soon</p>
+                <h5 class="cupon-pop">Your Id: <span>12345</span></h5>
+            </div>
+        </div>
+    </div>
     <!--=============== MAIN ===============-->
     <main class="main">
 
@@ -279,7 +292,6 @@
                                 </div>
                             </div>
                         </div>
-                        <h2 class="details-title">Raise Fund for Clean & Healthy Water</h2>
                         <div class="details__meta">
                             <div class="details__meta-category">
                                 Education
@@ -293,17 +305,18 @@
                                 <a href="#">23/04/2022</a>
                             </div>
                         </div>
+                        <h2 class="details-title">Raise Fund for Clean & Healthy Water</h2>
 
                         <div class="details-donate">
                             <div class="donate-total">
                                 <div class="donate-total-symbol">
                                     $
                                 </div>
-                                <input type="text" value="25.00" id="donate-total-input" autocomplete="off">
+                                <input type="text" value="25.00" id="donate-total-input" autocomplete="off" onblur="blur">
                             </div>
                             <ul class="total-list" id="total-list">
                                 <!-- <li><input type="button" class="total-btn total-active" onclick="filterProduct('25.00')" value="25.00"></input></li> -->
-                                <span class="total-btn total-active" onclick="numberInput('25.00')">25.00</span>
+                                <span class="total-btn total-active"  onclick="numberInput('25.00')">25.00</span>
                                 <span class="total-btn " onclick="numberInput('50.00')">50.00</span>
                                 <span class="total-btn " onclick="numberInput('75.00')">75.00</span>
                                 <span class="total-btn " onclick="numberInput('100.00')">100.00</span>
@@ -312,11 +325,63 @@
                             </ul>
                             <h6 class="total-heading">Select Payment Method</h6>
                             <div class="payment-mode">
-                                
+                                <div class="mode-radio-list">
+                                    <div class="give-radio-option">
+                                        <input type="radio" name="payment-mode" class="give-payment" id="give-payment-online" checked>
+                                        <label for="give-payment-online" class="give-payment-option">Online Payment</label>
+                                    </div>
+                                    <div class="give-radio-option">
+                                        <input type="radio" name="payment-mode" class="give-payment" id="give-payment-offline">
+                                        <label for="give-payment-offline" class="give-payment-option">Offline Payment</label>
+                                    </div>
+                                </div>
                             </div>
+                            <h6 class="total-heading">Personal Info</h6>
+                            <div class="payment-checkout">
+                                <form class="payment-checkout-user">
+                                    <div class="payment-input">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" placeholder="First Name" id="fname">
+                                    </div>
+                                    <div class="payment-input">
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" placeholder="Last Name" id="lname">
+                                    </div>
+                                    <div class="payment-input payment-input-2">
+                                        <label for="email">Address Email</label>
+                                        <input type="email" placeholder="Email" id="email">
+                                    </div>
+                                    <div class="payment-input payment-input-2 payment-input-card" id="payment-input-card">
+                                        <label for="card">Card Number</label>
+                                        <input type="text" placeholder="Card number" id="card">
+                                    </div>
+                                    <div class="payment-input payment-input-2 payment-input-address" id="payment-input-address">
+                                        <label for="address">Address Number</label>
+                                        <input type="text" placeholder="Address number" id="address">
+                                        <h6>To make an offline donation toward this cause, follow these steps::</h6>
+                                        <ol>
+                                            <li>Write a check payable to "Halpies - Nonprofit"</li>
+                                            <li>On the memo line of the check, indicate that the donation is for "Halpies - Nonprofit"</li>
+                                            <li>Mail your check to:</li>
+                                            <i>Haplies - Nonprofit</i>
+                                            <i>320 Pham Ngu Lao St</i>
+                                            <i>Ha Noi, Viet Nam</i>
+                                            Your tax-deductible donation is greatly appreciated!
+                                        </ol>
+                                    </div>
+
+                                </form>
+                                <div class="button button--flex" id="button-modal">
+                                    <span class="button__text" id="payment-button">Donate $25.00</span>
+                                </div>
+                            </div>
+
+
                         </div>
 
+                        <div class="detailes-tab">
 
+                        </div>
                     </article>
                     <aside class="sidebar-left">
                         <div class="categories__widget">
